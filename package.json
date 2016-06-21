@@ -8,7 +8,7 @@
     "pretest": "npm run prebuild && uglifyjs ./src/setup-spec.js ./src/**/*.js  ./src/finalize.js -o ./dist/filepicker-spec.js -b ",
     "test": "./node_modules/.bin/karma start --single-run",
     "prebuild": "rm -rf dist && mkdir dist",
-    "postbuild": "browserify -s filepicker -do dist/filepicker.js filepicker_loc.js index.js && uglifyjs dist/filepicker.js -o ./dist/filepicker.min.js --compress --mangle",
+    "postbuild": "browserify -s filepicker -do dist/filepicker.js filepicker_loc.js && uglifyjs dist/filepicker.js -o ./dist/filepicker.min.js --compress --mangle",
     "build": "uglifyjs ./src/setup.js ./src/**/*.js  ./src/finalize.js -o ./filepicker_loc.js -b",
     "watch": "onchange ./src/*.js ./src/**/*.js -- npm run build",
     "watch-test": "onchange ./tests/unit/*.js ./tests/unit/**/*.js ./src/*.js ./src/**/*.js -- npm run test",
