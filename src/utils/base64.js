@@ -9,7 +9,7 @@ filepicker.extend('base64', function(){
     *  Base64 encode / decode
     *  http://www.webtoolkit.info/
     *
-    **/    
+    **/
     // private property
     var _keyStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
 
@@ -122,7 +122,8 @@ filepicker.extend('base64', function(){
         var string = '',
             i = 0,
             c = 0,
-            c2 = 0;
+            c2 = 0,
+            c3 = 0;
 
         while ( i < utftext.length ) {
 
