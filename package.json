@@ -43,7 +43,7 @@
     "karma-jasmine-ajax": "0.1.13",
     "onchange": "2.0.0",
     "uglify-js": "2.4.24",
-    "browserify": "11.0.0",
+    "browserify": "11.0.0"
   },
   "dependencies": {}
 }
